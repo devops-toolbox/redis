@@ -8,10 +8,10 @@ redis: Redis
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.redis](https://galaxy.ansible.com/devops-toolbox.redis)
+[https://galaxy.ansible.com/devopstoolbox.redis](https://galaxy.ansible.com/devopstoolbox.redis)
 
 ```bash
-ansible-galaxy install devops-toolbox.redis
+ansible-galaxy install devopstoolbox.redis
 ```
 
 Requirements
@@ -60,7 +60,7 @@ Example Playbook
   tasks:
     - name: redis is configured
       import_role:
-        name: devops-toolbox.redis
+        name: devopstoolbox.redis
       vars:
         redis_packages_state: present
         redis_remove_packages: true
@@ -89,4 +89,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
