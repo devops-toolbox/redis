@@ -1,0 +1,19 @@
+---
+# defaults file for redis
+
+redis_packages_state: present
+redis_remove_packages: true
+redis_enable_service: true
+redis_enable_selinux: true
+redis_copy_templates: true
+redis_firewall_configure: true
+redis_firewall_rules:
+  - service: ssh
+  - port: 3389
+redis_users:
+  - user: devops
+    group: docker
+redis_selinux_booleans:
+  - name: ftp_home_dir
+    state: true
+    persistent: true
